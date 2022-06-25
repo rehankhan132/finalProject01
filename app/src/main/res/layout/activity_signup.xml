@@ -9,11 +9,21 @@
     android:orientation="vertical"
     tools:context=".SignUpActivity">
 
+    <ProgressBar
+        android:id="@+id/progressBarSignup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+
+        android:visibility="gone" />
+
     <ImageView
         android:id="@+id/imageViewSignUp"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:srcCompat="@drawable/avatar" />
+
 
     <TextView
         android:id="@+id/txtViewSignUpTitle"
@@ -103,7 +113,7 @@
         android:textColorHint="#263238" />
 
     <EditText
-        android:id="@+id/editTextPasswordSignUp"
+        android:id="@+id/edtTextPasswordSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
