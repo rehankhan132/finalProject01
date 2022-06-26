@@ -11,8 +11,8 @@
     <item name="txtViewHomeFromSignup" type="id" />
     <item name="imageView" type="id" />
     <item name="txtViewLoginTitle" type="id" />
-    <item name="edtTxtUsername" type="id" />
-    <item name="editTextTextPassword" type="id" />
+    <item name="edtTxtEmailLogin" type="id" />
+    <item name="edtTextPasswordLogin" type="id" />
     <item name="checkBox" type="id" />
     <item name="btnLogin" type="id" />
     <item name="txtViewSignUpFromLogin" type="id" />

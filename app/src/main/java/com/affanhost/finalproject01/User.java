@@ -1,7 +1,7 @@
 package com.affanhost.finalproject01;
 
 public class User {
-    public String fullname, username, email;
+    public String fullname, username, email, password;
 
     public User() {
     }

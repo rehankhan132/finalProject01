@@ -30,7 +30,7 @@
         android:textSize="34sp" />
 
     <EditText
-        android:id="@+id/edtTxtUsername"
+        android:id="@+id/edtTxtEmailLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -55,7 +55,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edtTextPasswordLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -95,7 +95,7 @@
         android:textColorHint="@color/white" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

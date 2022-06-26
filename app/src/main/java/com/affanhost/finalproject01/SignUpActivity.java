@@ -78,7 +78,7 @@ public class SignUpActivity extends AppCompatActivity {
         String password = edtTextPasswordSignUp.getText().toString().trim();
 
         if(fullname.isEmpty()){
-            edtTxtNameSignup.setError("Your Name must not be Empty...");
+            edtTxtNameSignup.setError("Your Name is Required!");
             edtTxtNameSignup.requestFocus();
             return;
         }
@@ -115,7 +115,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         progressBarSignUp.setVisibility(View.VISIBLE);
 
-        mAuth.createUserWithEmailAndPassword(email,password)
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
