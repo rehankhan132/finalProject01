@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private EditText edtTxtEmailLogin, edtTextPasswordLogin;
+    private TextView tvForgotPassword;
     private Button btnLogin;
     private ProgressBar progressBarLogin;
 
@@ -56,6 +57,15 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         mAuth = FirebaseAuth.getInstance();
+
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
+
+        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,ForgotPassword.class));
+            }
+        });
 
         edtTxtEmailLogin = findViewById(R.id.edtTxtEmailLogin);
         edtTextPasswordLogin = findViewById(R.id.edtTextPasswordLogin );
