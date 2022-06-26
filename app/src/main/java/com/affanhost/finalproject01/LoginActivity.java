@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -110,10 +111,21 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    // Redirects to Profile Activity
-                    startActivity(new Intent(LoginActivity.this,ProfileActivity.class));
+
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                    if(user.isEmailVerified()) {
+                        // Redirects to Profile Activity
+                        startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+                    }else{
+                        user.sendEmailVerification();
+                        Toast.makeText(LoginActivity.this,"Verify your email please.", Toast.LENGTH_LONG).show();
+                        progressBarLogin.setVisibility(View.GONE);
+                    }
+
                 }else{
                     Toast.makeText(LoginActivity.this,"Login Failed! Try Again!", Toast.LENGTH_LONG).show();
+                    progressBarLogin.setVisibility(View.GONE);
                 }
             }
         });
