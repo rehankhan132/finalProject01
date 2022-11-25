@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "947067566780",
+    "project_id": "affanhost-c8603",
+    "storage_bucket": "affanhost-c8603.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947067566780:android:06148213a61aa251ea2eb9",
+        "android_client_info": {
+          "package_name": "com.affanhost.finalproject01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947067566780-sa21ok3oj7c978rucn6i6tpqf0tah917.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_l0udN8sMpwPkHQL4_tikirLx2SiVdHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947067566780-sa21ok3oj7c978rucn6i6tpqf0tah917.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

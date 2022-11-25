@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageViewSignUp" type="id" />
+    <item name="txtViewSignUpTitle" type="id" />
+    <item name="edtTxtNameSignUp" type="id" />
+    <item name="edtTxtUsernameSignUp" type="id" />
+    <item name="edtTextEmailAddress" type="id" />
+    <item name="editTextPasswordSignUp" type="id" />
+    <item name="btnSignUp" type="id" />
+    <item name="txtViewLoginFromSignUp" type="id" />
+    <item name="txtViewHomeFromSignup" type="id" />
+    <item name="imageView" type="id" />
+    <item name="txtViewLoginTitle" type="id" />
+    <item name="edtTxtEmailLogin" type="id" />
+    <item name="edtTextPasswordLogin" type="id" />
+    <item name="checkBox" type="id" />
+    <item name="btnLogin" type="id" />
+    <item name="txtViewSignUpFromLogin" type="id" />
+    <item name="txtViewHomeFromLogin" type="id" />
+</resources>
