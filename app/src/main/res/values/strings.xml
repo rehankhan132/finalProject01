@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Final Project 01</string>
+    <string name="app_name">Final Project 03</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

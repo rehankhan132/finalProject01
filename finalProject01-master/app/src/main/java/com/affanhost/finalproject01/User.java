@@ -1,4 +1,4 @@
-package com.affanhost.finalproject01;
+package com.affanhost.finalproject03;
 
 public class User {
     public String fullname, username, email, password;
